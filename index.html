@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instagram icon</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+        .container {
+            height: 100vh;
+            background-color: #232339;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon {
+            width: 120px;
+            height: 120px;
+            background: radial-gradient(circle at 20% 120%, #ffee00, #dc148500),
+                                radial-gradient(circle at 0 0, #3700ff, #ff00f7);
+            border-radius: 30px;
+            position: relative;
+        }
+        .square {
+            position: absolute;
+            inset: 15%;
+            border: 6px solid white;
+            border-radius: 20px;
+        }
+        .square::after {
+            content: '';
+            position: absolute;
+            inset: 20%;
+            border: 6px solid white;
+            border-radius: 50%;
+        }
+        .square::before {
+            content: '';
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            width: 8px;
+            height: 8px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="icon">
+            <div class="square"></div>
+        </div>
+    </div>
+</body>
+</html>
